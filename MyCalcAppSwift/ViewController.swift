@@ -98,5 +98,9 @@ class ViewController: UIViewController {
        priceField.text = "0"
     }
 
+    @IBAction func restart(_ segue: UIStoryboardSegue) {
+        priceField.text = "0"
+    }
+
 }
 

@@ -131,6 +131,9 @@
                                 <rect key="frame" x="16" y="400" width="288" height="60"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <state key="normal" title="10%引きをする"/>
+                                <connections>
+                                    <segue destination="spL-aJ-C3r" kind="modal" id="Lcb-a8-1bN"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -169,6 +172,9 @@
                                 <rect key="frame" x="16" y="150" width="288" height="30"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                                 <state key="normal" title="別の計算をするボタン"/>
+                                <connections>
+                                    <segue destination="ee3-Gt-R6U" kind="unwind" unwindAction="restart:" id="6q4-sJ-19n"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -178,6 +184,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DXr-dr-JhE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="ee3-Gt-R6U" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="764" y="125"/>
         </scene>
