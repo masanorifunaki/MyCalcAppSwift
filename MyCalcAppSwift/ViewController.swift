@@ -20,6 +20,7 @@ class ViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let resultVC = segue.destination as! ResultViewController
         if let price = Int(priceField.text!) {
+            print(price)
             resultVC.price = price
         }
     }
