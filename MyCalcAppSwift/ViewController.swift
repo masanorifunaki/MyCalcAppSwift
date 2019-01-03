@@ -17,6 +17,13 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let resultVC = segue.destination as! ResultViewController
+        if let price = Int(priceField.text!) {
+            resultVC.price = price
+        }
+    }
+
     @IBAction func tap1Button(_ sender: Any) {
         let value = priceField.text! + "1"
         if let price = Int(value) {
